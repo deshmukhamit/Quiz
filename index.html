@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <script language="javascript" type="text/javascript">
+
+        function CheckAnswer()
+        {
+            chosen = "";
+            len = document.frmQuestion1.optQuestion.length;
+
+            for (i = 0; i <len; i++)
+            {
+                if (document.frmQuestion1.optQuestion[i].checked)
+                {
+                    chosen = document.frmQuestion1.optQuestion[i].value;
+                }
+            }
+
+            if (chosen == "")
+            {
+                alert("You did not make a selection")
+            }
+            else
+            {
+                if (document.frmQuestion1.optQuestion[2].checked == true)
+                {
+                    alert ("You Are Correct!  The first U.S. President was " + chosen)
+                }
+                else
+                {
+                    alert ("No, the first U.S. President was not " + chosen + ".  Please Try Again!")
+                }
+            }
+
+            return true;
+        }
+
+    </script>
+</head>
+<body>
+<strong>Who was the first President of the United States?</strong><br /><br />
+
+<form name="frmQuestion1" method="post" onsubmit="return CheckAnswer()">
+
+    <input 	type="radio"
+              name="optQuestion"
+              value="Benjamin Franklin" >Benjamin Franklin<br /><br />
+
+    <input 	type="radio"
+              name="optQuestion"
+              value="Thomas Jefferson" >Thomas Jefferson<br /><br />
+
+    <input 	type="radio"
+              name="optQuestion"
+              value="George Washington" >George Washington<br /><br />
+
+    <input type="radio"
+              name="optQuestion"
+              value="Andrew Jackson" >Andrew Jackson<br /><br />
+
+    <input type="submit" value="Select Your Answer and Click Here" />
+
+</form>
+
+
+</body>
+</html>
