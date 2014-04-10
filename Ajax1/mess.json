@@ -1,0 +1,5 @@
+{"test":[{"ques":"2+2=?","option":[4,3,8,6],"correctAnswer":0},
+{"ques":"5.5*2=?","option":[4,3,8,10],"correctAnswer":3},
+{"ques":"2/5=?","option":[4,3,0.4,6],"correctAnswer":2},
+{"ques":"12*3=?","option":[4,36,8,6],"correctAnswer":1},
+{"ques":"50-4=?","option":[4,3,46,6],"correctAnswer":2}]}
